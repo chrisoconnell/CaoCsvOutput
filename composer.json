@@ -1,6 +1,6 @@
 {
     "name": "chrisoconnell/cao-csv-output",
-    "description": "Zend Framework 2 Module for generating CSV output from an array."
+    "description": "Zend Framework 2 Module for generating CSV output from an array.",
     "type": "library",
     "keywords": ["zf2", "zendframework", "module", "csv"],
     "homepage": "https://github.com/chrisoconnell/CaoCsvOutput",
