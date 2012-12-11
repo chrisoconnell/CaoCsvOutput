@@ -1,7 +1,6 @@
 {
     "name": "chrisoconnell/cao-csv-output",
-    "description": "A Zend Framework 2 view helper to render an HTML Table",
-    "license": "BSD-3-Clause",
+    "description": "Zend Framework 2 Module for generating CSV output from an array."
     "type": "library",
     "keywords": ["zf2", "zendframework", "module", "csv"],
     "homepage": "https://github.com/chrisoconnell/CaoCsvOutput",
