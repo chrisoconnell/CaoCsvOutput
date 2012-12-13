@@ -3,6 +3,10 @@ CaoCsvOutput
 
 Zend Framework 2 Module for generating CSV output from an array.
 
+This module provides both a Model and View Helper with which you can use to output
+the csv data. When using the view helper, the output will automatically be passed 
+throught the escapeHtml view helper and all new lines will be converted to `<br>`.
+
 Installation
 ------------
 
