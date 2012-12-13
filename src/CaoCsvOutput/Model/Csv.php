@@ -12,6 +12,12 @@ class Csv
 
     protected $data;
 
+    /**
+     * @param array $data
+     * @param string $delimiter
+     * @param string $enclosure
+     * @param bool $encloseAll
+     */
     public function __construct(array $data, $delimiter = ';', $enclosure = '"', $encloseAll = false)
     {
         $this->data = $data;
@@ -65,6 +71,9 @@ class Csv
         return $this;
     }
 
+    /**
+     * @return string CSV output.
+     */
     public function render()
     {
         $delimiter_esc = preg_quote($this->delimiter, '/');
