@@ -51,12 +51,12 @@ Installation
 
 Usage
 -----
-You can either create an instance of `CaoCsvOutput/Model/Csv` or use the view helper
+You can either create an instance of `CaoCsvOutput\Model\Csv` or use the view helper
 `csvOutput`. 
 
 ### Example of Instance
 1. Define the data as an array.
-2. Create a new instance of `CaoCsvOutput/Model/Csv` using `$data` as the input.
+2. Create a new instance of `CaoCsvOutput\Model\Csv` using `$data` as the input.
 3. Output the result using the `render` method.
 
     ```php
@@ -64,7 +64,7 @@ You can either create an instance of `CaoCsvOutput/Model/Csv` or use the view he
       array('a', 1, 'a + b'),
       array('b', '"', ';'),
     );
-    $csv = new CaoCsvOutput/Model/Csv($data);
+    $csv = new CaoCsvOutput\Model\Csv($data);
     $output = $csv->render();
     ```
 4. Which will set `$output` to be
