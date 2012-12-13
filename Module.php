@@ -1,6 +1,6 @@
 <?php
 /**
-* Zend Framework 2 View Helper to render an HTML Table
+* Zend Framework 2 Module for generating CSV output from an array.
 *
 * @link https://github.com/chrisoconnell/CaoCsvOutput.git
 */
