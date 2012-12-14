@@ -73,3 +73,11 @@ You can either create an instance of `CaoCsvOutput\Model\Csv` or use the view he
     a;1;"a + b"
     b;"""";";"
     ```
+
+### View Helper Example
+1. Define the data like before.
+2. From within your view script (.phtml file) simply call the view helper.
+   
+    ```php
+    echo $this->csvOutput($data);
+    ```
