@@ -81,3 +81,34 @@ You can either create an instance of `CaoCsvOutput\Model\Csv` or use the view he
     ```php
     echo $this->csvOutput($data);
     ```
+
+### Input Parameters
+
+You can easily change the characters used for the CSV output by setting the attributes parameters when calling either the View Helper or the Model class.
+
+<dl>
+	<dt>Data</dt>
+	<dd>(array) Input array which gets converted to CSV output</dd>
+   <dt>Delimiter</dt>
+	<dd>(string) Character separating the fields of the CSV output. Default is <code>;</code></dd>
+   <dt>Enclosure</dt>
+	<dd>(string) Character that surounds the field text. Default is <code>"</code></dd>
+   <dt>Enclose All</dt>
+	<dd>(bool) If every field should be enclosed by the <strong><em>Enclosure</em></strong> string or not.<br/>
+	Defalut is <code>false</code>.
+	By default, only fields which contain a space, the delimiter, or the enclosure will be enclosed by
+	the enclosure character.</dd>
+</dl>
+
+#### Example
+
+```php
+echo $this->csvOutput($data, ',', "'", true);
+```
+   
+If using the input from above, the output would be
+
+```
+'a','1','a + b'
+'b','"',';'
+```
